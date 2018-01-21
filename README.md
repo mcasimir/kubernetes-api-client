@@ -14,7 +14,7 @@ const KubernetesApiClient = require('kubernetes-api-client');
 const k8s = new KubernetesApiClient();
 
 async function main() {
-  const {items} = await k8s.get('v1/namespaces');
+  const {items} = await k8s.get('api/v1/namespaces');
 
   console.info('Available namespaces:');
 
@@ -26,7 +26,7 @@ async function main() {
 
   const nsId = `test-ns-${Date.now()}`;
   setTimeout(function() {
-    k8s.post('v1/namespaces', {
+    k8s.post('api/v1/namespaces', {
       metadata: {
         name: nsId
       }
@@ -34,7 +34,7 @@ async function main() {
   }, 3000);
 
   setTimeout(function() {
-    k8s.delete(`v1/namespaces/${nsId}`);
+    k8s.delete(`api/v1/namespaces/${nsId}`);
   }, 6000);
 
   await k8s.watch('v1/namespaces', function({type, object: ns}) {
