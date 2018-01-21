@@ -9,7 +9,7 @@ npm install --save kubernetes-api-client
 ## Usage
 
 ``` js
-const KubernetesApiClient = require('../lib');
+const KubernetesApiClient = require('kubernetes-api-client');
 
 const k8s = new KubernetesApiClient();
 
