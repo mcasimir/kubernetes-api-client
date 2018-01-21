@@ -1,4 +1,4 @@
-const {execSync} = require('child-process');
+const {execSync} = require('child_process');
 
 module.exports = function installPlugin(release) {
   release.phases.finish.push({
