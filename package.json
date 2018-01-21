@@ -1,7 +1,7 @@
 {
-  "name": "bootwire",
+  "name": "kubernetes-api-client",
   "version": "2.0.2",
-  "description": "Application and dependencies bootstrap for node.js",
+  "description": "Kubernetes api client with support for async/await, watch for resources and auto configuration",
   "main": "lib/index.js",
   "scripts": {
     "docs": "npm-run-series docs:jsdoc docs:toc",
