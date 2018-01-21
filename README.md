@@ -1,4 +1,4 @@
-# Kubernetes Api Client for Node js
+# Kubernetes Api Client for Node.js
 
 ## Install
 
