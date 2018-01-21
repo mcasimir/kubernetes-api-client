@@ -1,6 +1,6 @@
 {
   "name": "kubernetes-api-client",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "Kubernetes api client with support for async/await, watch for resources and auto configuration",
   "main": "lib/index.js",
   "scripts": {
